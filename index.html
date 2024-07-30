@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transactions</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Add a new transaction</h1>
+        </header>
+        <div class="content">
+            <label for="drop-down">Type :</label>
+            <select name="drop-down" id="option">
+                <option value="default">Choose one...</option>
+                <option value="income">Income</option>
+                <option value="expenses">Expenses</option>
+            </select>
+            <div class="details">
+                <div>
+                    <label for="Name">Name :</label>
+                    <input type="text" name="Name" id="name">
+                </div>
+                <div>
+                    <label for="amount">Amount :</label>
+                    <input type="text" name="amount" id="amount">
+                </div>
+            </div>
+            <div class="btn">
+                <button onclick="addElements()">Add to transactions</button>
+            </div>
+        </div>
+    </div>
+    <div class="new-data">
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
